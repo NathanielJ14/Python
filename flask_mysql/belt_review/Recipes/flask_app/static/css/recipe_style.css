@@ -1,0 +1,13 @@
+p {
+    font-size: 25px;
+}
+
+.topBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.bar {
+    margin-left: 10px;
+}

@@ -1,0 +1,45 @@
+h1, h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+label {
+    font-size: 40px;
+    margin-right: 5px;
+}
+
+input {
+    font-size: 30px;
+}
+
+button {
+    font-size: 30px;
+    background-color: cornflowerblue;
+    padding: 5px;
+    color: white;
+}
+
+.allDojos{
+    border: 2px solid black;
+    width: 100%;
+}
+
+.rightSide, .leftSide {
+    width: 40%;
+}
+
+#new {
+    font-size: 30px;
+}
+
+a {
+    font-size: 25px;
+    display: block;
+    margin: 20px;
+}

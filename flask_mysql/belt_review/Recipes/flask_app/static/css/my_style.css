@@ -1,0 +1,32 @@
+.left, .right {
+    width: 30%;
+    padding: 30px;
+    margin: 10px;
+    border: 2px black solid;
+    border-radius: 5%;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    margin: 20px auto;
+}
+
+.under {
+    margin-top: 30px;
+}
+

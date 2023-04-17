@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Dojo Survey</title>
+</head>
+
+<body>
+    <form action="/process" method="post">
+        <div>
+            <label for="name">Your Name:</label>
+            <input name="name" type="text">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input name="email" type="text">
+        </div>
+
+        <div>
+            <label for="game">Favorite Game:</label>
+            <select name="game" id="game">
+                <option name="Cod" value="Cod">COD</option>
+                <option name="Halo" value="Halo">Halo</option>
+                <option name="Minecraft" value="Minecraft">Minecraft</option>
+                <option name="Valorant" value="Valorant">Valorant</option>
+            </select>
+        </div>
+        
+        <div class="why">
+            <label for="why">Why is it your favorite game?</label>
+            <textarea name="why" id="why" cols="50" rows="5"></textarea>
+        </div>
+
+        <button>Submit</button>
+    </form>
+
+    {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+    {% if messages %}                            <!-- check if there are any messages -->
+        {% for message in messages %}            <!-- loop through the messages -->
+            <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+    
+</body>
+</html>

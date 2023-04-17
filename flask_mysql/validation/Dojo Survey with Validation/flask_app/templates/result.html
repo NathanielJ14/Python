@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <form action="/" method="get">
+        <h1>Submitted Info</h1>
+
+        <div>
+            <label for="name">Your Name:</label>
+            <p>{{session['username']}}</p>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <p>{{session['useremail']}}</p>
+        </div>
+        <div>
+            <label for="game">Favorite Game:</label>
+            <p>{{session['game']}}</p>
+        </div>
+
+        <div>
+            <label for="console">Console:</label>
+            <p>{{session['device']}}</p>
+        </div>
+
+
+        <div class="why">
+            <label for="why">Why is it your favorite game?</label>
+            <p>{{session['why']}}</p>
+        </div>
+
+
+        <button>Go Back</button>
+    </form>
+    
+</body>
+</html>

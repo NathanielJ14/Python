@@ -1,0 +1,28 @@
+.left, .right {
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    margin: 10px;
+    border: 2px black solid;
+    border-radius: 5%;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 30%;
+}
+
+
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    margin: 20px auto;
+}
